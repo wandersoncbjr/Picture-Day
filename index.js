@@ -1,7 +1,7 @@
 const btn = document.querySelector("#botao");
 btn.addEventListener("click", botao);
 function botao() {
-
+    PegandoInformacao()
 }
 
 async function PegandoInformacao() {
@@ -13,4 +13,7 @@ async function PegandoInformacao() {
     const data = await resposta.json();
     console.log(data);
     console.log(data.explanation);
+    document.getElementById("oi").innerHTML = data.explanation;
+    document.getElementById("data").innerHTML = data.date;
+    document.getElementsByTagName("body")[0].style = `background-image:url(${data.url});`;
 }
