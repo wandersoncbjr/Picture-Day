@@ -1,3 +1,95 @@
 body{
+    background-image: url(211255.gif);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100%;
+    width: 100%;
+    color: white;
+}
+
+
+.header{
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0,0,0, 0.8);
+    align-items: center;
+    display:flex
+}
+
+.gif{
+    width: 130px;
+    height: 17vh;
+    background-image: url(Nasa.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 40px;
+}
+
+/* .legenda{
+    background-color: rgba(0,0,0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 30.%;
+    border-radius: 5px;
+    
+
+} */
+
+
+
+
+.legenda {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    padding: 15px;
+    line-height: 1em;
+    font-size: 2.2rem;
+}
+.legenda>h2{
+    width: 60%;
+    background: #1b1b1b85;
+    padding: 2%;
+    border-radius: 5%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+#botao , #inputData {
+    font-family: 'Audiowide' , cursive;
+    height: 40px;
+    width: 200px;
+    color: #03122C;
+    border-radius: 5px;
+}
+#botao {
+    background: #8ab8a8;
+    border: #10C722;
+    margin-top: 20px;
+}
+#inputData {
+    background: #E5E5E5;
+    border: none;
+    padding-left: 10px;
+}
+#botao:hover {
+    background: #E5E5E5;
+    color: #03122C;
 }
