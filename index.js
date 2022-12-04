@@ -15,8 +15,18 @@ async function PegandoInformacao() {
   var dataInput = data.date;
   console.log(dataInput + "data");
   dados = new Date(dataInput);
+  let tituloPrincipal = document.querySelector(".tituloPrincipal");
+  tituloPrincipal.innerHTML = ``;
   dataFormatada = dados.toLocaleDateString("pt-BR", { timeZone: "UTC" });
-  document.getElementById("data").innerHTML = dataFormatada;
+  let titulo = document.querySelector("#titulo1");
+  titulo.innerHTML = `
+  <div class="titulo">
+  <h1 id="titulo">${data.title} - ${dataFormatada}</h1>
+</div>`;
+
+  let footer = document.querySelector("#footer");
+  footer.innerHTML =
+    "<footer> <div class='footer'><div><img src='linkedin.png' class='foto'></div> <div class='info-footer'> <a>2022 -</a> <a href='https://www.linkedin.com/in/wanderson-santos-7717651ba/'>Wanderson Santos</a></div></div></footer>";
   console.log(dataFormatada);
 
   if (data.media_type === "image") {
@@ -26,23 +36,28 @@ async function PegandoInformacao() {
   }
 
   if (data.media_type === "video") {
-    let video = document.querySelector("#img");
+    let video = document.querySelector("#video");
     video.innerHTML = `<iframe width="853" height="480" src="${data.url}"></iframe>`;
     document.getElementsByTagName(
       "body"
-    )[0].style = `background-image:url(cat.gif);`;
+    )[0].style = `background-image:url(./images/estrela.gif);`;
   }
 
   if (data.media_type === "image") {
-    let vazio = document.querySelector("#img");
-    vazio.innerHTML = ` `;
+    let vazio = document.querySelector("#video");
+    vazio.innerHTML = ``;
   }
 
   if (data.date === undefined) {
     document.querySelector("#legenda").innerText =
-      "você ainda não tem uma maquina do tempo pra viajar para o futuro";
+      "você ainda não tem uma máquina do tempo 😄";
     document.getElementsByTagName(
       "body"
-    )[0].style = `background-image:url(caveira.gif);`;
+    )[0].style = `background-image:url(./images/astro.gif);`;
+
+    let titulo = document.querySelector("#titulo1");
+    titulo.innerHTML = ``;
+    let vazio = document.querySelector("#video");
+    vazio.innerHTML = ``;
   }
 }
