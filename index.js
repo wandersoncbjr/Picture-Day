@@ -26,7 +26,7 @@ async function PegandoInformacao() {
 
   let footer = document.querySelector("#footer");
   footer.innerHTML =
-    "<footer> <div class='footer'><div><img src='linkedin.png' class='foto'></div> <div class='info-footer'> <a>2022 -</a> <a href='https://www.linkedin.com/in/wanderson-santos-7717651ba/'>Wanderson Santos</a></div></div></footer>";
+    "<footer> <div class='footer'><div><img src='./images/linkedin.png' class='foto'></div> <div class='info-footer'> <a>2022 -</a> <a href='https://www.linkedin.com/in/wanderson-santos-7717651ba/'>Wanderson Santos</a></div></div></footer>";
   console.log(dataFormatada);
 
   if (data.media_type === "image") {

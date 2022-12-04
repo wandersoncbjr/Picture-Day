@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Trade+Winds&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ramaraja&family=Trade+Winds&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 body {
-  background-image: url(../images/terra.gif );
+  background-image: url(../images/terra.gif);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,8 +10,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
   color: white;
   transition: all ease 0.7s;
 }
@@ -27,7 +25,7 @@ body {
 .gif {
   width: 130px;
   height: 17vh;
-  background-image: url(Nasa.gif);
+  background-image: url(../images/Nasa.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -41,37 +39,39 @@ body {
   padding: 15px;
   line-height: 1em;
   font-size: 1.9rem;
-  
 }
 .legenda > h2 {
   width: 60%;
   background: #1b1b1b85;
   padding: 2%;
   border-radius: 5%;
-  font-family: 'Ramaraja', serif;
-
- 
-
-
-  
+  font-family: "Ramaraja", serif;
 }
 
-.titulo{
+.titulo {
   display: flex;
   text-align: center;
   justify-content: center;
   padding: 15px;
   line-height: 1em;
   font-size: 1.9rem;
-  
 }
 
-.titulo  h1 {
+.titulo h1 {
   width: 60%;
   background: #1b1b1b85;
   padding: 2%;
   border-radius: 10px;
-  font-family: 'Trade Winds', cursive;
+  font-family: "Trade Winds", cursive;
+}
+.link {
+  color: #5a95c3;
+  height: 60px;
+  text-decoration: none;
+  transition: all ease-in-out 0.5s;
+}
+.link:hover{
+  font-size: 2.1rem;
 }
 
 .img {
@@ -88,7 +88,7 @@ body {
 }
 #botao,
 #inputData {
-  font-family:  'Trade Winds', cursive;
+  font-family: "Trade Winds", cursive;
   font-size: 1.1em;
   height: 40px;
   width: 200px;
@@ -105,10 +105,10 @@ body {
   transition: all ease 0.5s;
 }
 
-#botao:hover{
+#botao:hover {
   transform: scale(1);
 }
-.tituloPrincipal {  
+.tituloPrincipal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,9 +117,8 @@ body {
   padding: 20px;
   margin-top: 20px;
   font-size: 60px;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
-
 
 #inputData {
   background: #e5e5e5;
@@ -131,35 +130,32 @@ body {
   color: #ffff;
 }
 
-.video{
-justify-content: center;
-display: flex;
+.video {
+  justify-content: center;
+  display: flex;
 }
 
 footer {
-
-    font-size: 1.3rem;
-    color: #E5E5E5;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 1.3rem;
+  color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.foto{
+.foto {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-
-  
 }
 
-.footer{
+.footer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,17 +164,43 @@ footer {
   text-decoration: none;
 }
 
-.info-footer a{
+.info-footer a {
   font-size: 1rem;
   text-decoration: none;
-  font-family: 'Trade Winds', cursive;
+  font-family: "Trade Winds", cursive;
   color: #ffff;
   transition: all ease 0.6s;
-  
-
 }
 
-.info-footer:hover a{
-  
+.info-footer:hover a {
   font-size: 1.3rem;
+  padding: 10px;
+}
+
+@media (max-width: 750px) {
+  .legenda {
+    font-size: 1.3rem;
+  }
+  .legenda > h2 {
+    width: 55%;
+  }
+
+  .gif {
+    width: 100px;
+    height: 10vh;
+  }
+
+  .header {
+    height: 10vh;
+  }
+  .inputs {
+    height: 145px;
+  }
+  #inputData {
+    padding-left: 8px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
