@@ -7,7 +7,7 @@
 uma simples página web, onde o usuário poderá escolher uma data específica, através desta data a aplicação realizará uma busca na api da NASA e vai mostrar na sua tela tudo que aconteceu no espaço naquele dia 👨🏻‍🚀
 <br/>
 
-https://user-images.githubusercontent.com/101597114/207439034-242de224-8e13-4666-a63f-3d3759ad69b9.mp4
+
 
 <br>
 
@@ -45,3 +45,5 @@ Abra o arquivo html no seu navegador
 ## :dart: Status do projeto
 
 <b>projeto online acesse essa url para visualizar a página</b>: https://wandersoncbjr.github.io/Picture-Day/ ✔
+
+https://user-images.githubusercontent.com/101597114/207439034-242de224-8e13-4666-a63f-3d3759ad69b9.mp4
