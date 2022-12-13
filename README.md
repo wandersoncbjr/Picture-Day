@@ -7,16 +7,6 @@
 uma simples página web, onde o usuário poderá escolher uma data específica, através desta data a aplicação realizará uma busca na api da NASA e vai mostrar na sua tela tudo que aconteceu no espaço naquele dia 👨🏻‍🚀
 
 
-<<<<<<< HEAD
-=======
-
-
-Uploading Apod.mp4…
-
->>>>>>> 365c2f2b3f32e32809088df93944020633972bb6
-
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/7h6gTTGjlGs)
-
 ## :wrench: Tecnologias utilizadas
 
 <div style="display: inline_block">
