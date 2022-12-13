@@ -10,10 +10,9 @@ async function PegandoInformacao() {
   const url = `https://api.nasa.gov/planetary/apod?api_key=${apikey}&date=${input}`;
   const resposta = await fetch(url);
   const data = await resposta.json();
-  console.log(data);
+
   document.querySelector("#legenda").innerText = data.explanation;
   var dataInput = data.date;
-  console.log(dataInput + "data");
   dados = new Date(dataInput);
   let tituloPrincipal = document.querySelector(".tituloPrincipal");
   tituloPrincipal.innerHTML = ``;
@@ -27,12 +26,11 @@ async function PegandoInformacao() {
   let footer = document.querySelector("#footer");
   footer.innerHTML =
     "<footer> <div class='footer'><div><img src='./images/linkedin.png' class='foto'></div> <div class='info-footer'> <a>2022 -</a> <a href='https://www.linkedin.com/in/wanderson-santos-7717651ba/'>Wanderson Santos</a></div></div></footer>";
-  console.log(dataFormatada);
 
   if (data.media_type === "image") {
-    document.getElementsByTagName(
+    let a = (document.getElementsByTagName(
       "body"
-    )[0].style = `background-image:url(${data.url});`;
+    )[0].style = `background-image:url(${data.url});`);
   }
 
   if (data.media_type === "video") {
