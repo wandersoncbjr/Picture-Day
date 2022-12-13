@@ -5,9 +5,6 @@
 <h4>Esse é o primeiro projeto de Frontend da trilha de revisão, devs! 🧑🏿‍💻</h4>
 <br>
 uma simples página web, onde o usuário poderá escolher uma data específica, através desta data a aplicação realizará uma busca na api da NASA e vai mostrar na sua tela tudo que aconteceu no espaço naquele dia 👨🏻‍🚀
-<br/>
-
-
 
 <br>
 
