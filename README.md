@@ -38,4 +38,4 @@ Abra o arquivo html no seu navegador
 
 ## :dart: Status do projeto
 
-<b>projeto online acesse essa url para visualizar a página</b>: https://wandersoncbjr.github.io/Picture-Day/
+<b>projeto online acesse essa url para visualizar a página</b>: https://wandersoncbjr.github.io/Picture-Day/ ✔
