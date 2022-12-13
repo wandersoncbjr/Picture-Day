@@ -8,7 +8,6 @@ uma simples página web, onde o usuário poderá escolher uma data específica, 
 
 <br>
 
-<iframe width="1384" height="600" src="https://www.youtube.com/embed/7h6gTTGjlGs" title="PROJETO NASA - APOD API" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## :wrench: Tecnologias utilizadas
